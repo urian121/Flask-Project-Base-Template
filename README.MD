@@ -1,6 +1,6 @@
 # Flask Project Base Template 🚀
 
-## Descripción del Proyecto  
+
 **`flask-project-base-template`** es un punto de partida bien estructurado para proyectos web con Flask. Proporciona una organización clara de carpetas, rutas y archivos de configuración, templa
 
 - Configuración de base de datos.  
@@ -18,7 +18,7 @@
 
 ## Resultado Final
 
-![Resultado Final](https://raw.githubusercontent.com/urian121/imagenes-proyectos-github/refs/heads/master/deploy-web-con-Flask-en-vercel.png)
+![Resultado Final](https://raw.githubusercontent.com/urian121/imagenes-proyectos-github/refs/heads/master/Flask_Project_Base_Template.gif)
 
 ---
 
