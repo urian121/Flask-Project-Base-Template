@@ -54,11 +54,12 @@ flask-project-base-template/
 
 El archivo `__init__.py` dentro de la carpeta `app/` tiene la función de inicializar y configurar la aplicación Flask, preparando todo lo necesario para que la aplicación se ejecute correctamente. Además sirve como el punto de entrada para crear y configurar la instancia de la aplicación.
 
-# La función `create_app()` es el punto de entrada para la creación de la aplicación, además retorna la instancia de la aplicación Flask, que es la que se usará para ejecutar el servidor o desplegar la app.
-# 1. Se inicializa la aplicación Flask con configuraciones como el directorio de archivos estáticos y templates.
-# 2. Se carga la configuración desde el archivo `config.py` (en este caso, `DevelopmentConfig`).
-# 3. Se registran las rutas de la aplicación importando y ejecutando la función `'registrar_rutas'` del archivo `'routers'`.
-# 4. Se configura el manejo de errores `404`, redirigiendo a la ruta de inicio.
+La función `create_app()` es el punto de entrada para la creación de la aplicación, además retorna la instancia de la aplicación Flask, que es la que se usará para ejecutar el servidor o desplegar la app.
+
+1. Se inicializa la aplicación Flask con configuraciones como el directorio de archivos estáticos y templates.
+2. Se carga la configuración desde el archivo `config.py` (en este caso, `DevelopmentConfig`).
+3. Se registran las rutas de la aplicación importando y ejecutando la función `'registrar_rutas'` del archivo `'routers'`.
+4. Se configura el manejo de errores `404`, redirigiendo a la ruta de inicio.
 
 
 - **Archivo `controllers/__init__.py`:**  
@@ -69,17 +70,19 @@ El archivo `__init__.py` dentro de la carpeta `app/` tiene la función de inicia
 
 ## Cómo Correr el Proyecto 🚀  
 
-1. **Crear un entorno virtual:**  
+**1. Crear un entorno virtual:**  
    Si no sabes cómo hacerlo, aquí tienes una [guía paso a paso](https://www.urianviera.com/python/crear-entornos-virtuales-en-python).
    No olvides activar tu entorno virtual.
-2. **Instalar las dependencias del proyecto:**  
+**2. Instalar las dependencias del proyecto:**  
    Ejecuta el siguiente comando para instalar todas las librerías necesarias:  
    ```bash
    pip install -r requirements.txt
-3. **Ejecutar el proyecto**
+   ```
+**3. Ejecutar el proyecto**
    ```bash
    python app.py
-4. **Visitar la URL**
+   ```
+**4. Visitar la URL**
    http://localhost:8000
 
 
@@ -88,6 +91,6 @@ El archivo `__init__.py` dentro de la carpeta `app/` tiene la función de inicia
 - Ayuda a difundir este proyecto compartiéndolo con otros 📢  
 - Invítame una cerveza 🍺 o un café ☕ (Paypal: iamdeveloper86@gmail.com)  
 - Agradece públicamente 🤓, ¡me alegrará saberlo!  
-- Y no olvides dejar tu estrella ⭐ en el repositorio... ¡dicen que trae buena suerte! 🍀  
+- Y no olvides dejar tu estrella ⭐ en el repositorio... **¡dicen que trae buena suerte!** 🍀  
 
 ## No olvides SUSCRIBIRTE 👍
