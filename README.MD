@@ -52,7 +52,6 @@ flask-project-base-template/
 
 ### Notas
 
-# Este archivo contiene la lógica para la inicialización de la aplicación Flask.
 El archivo `__init__.py` dentro de la carpeta `app/` tiene la función de inicializar y configurar la aplicación Flask, preparando todo lo necesario para que la aplicación se ejecute correctamente. Además sirve como el punto de entrada para crear y configurar la instancia de la aplicación.
 
 # La función `create_app()` es el punto de entrada para la creación de la aplicación, además retorna la instancia de la aplicación Flask, que es la que se usará para ejecutar el servidor o desplegar la app.
@@ -68,7 +67,20 @@ El archivo `__init__.py` dentro de la carpeta `app/` tiene la función de inicia
 - **Archivo `routers/__init__.py`:**  
   Está configurado para exportar todas las rutas registradas en el archivo `rutas.py`, facilitando su importación directa desde `routers`.
 
+## Cómo Correr el Proyecto 🚀  
 
+1. **Crear un entorno virtual:**  
+   Si no sabes cómo hacerlo, aquí tienes una [guía paso a paso](https://www.urianviera.com/python/crear-entornos-virtuales-en-python).
+   No olvides activar tu entorno virtual.
+2. **Instalar las dependencias del proyecto:**  
+   Ejecuta el siguiente comando para instalar todas las librerías necesarias:  
+   ```bash
+   pip install -r requirements.txt
+3. **Ejecutar el proyecto**
+   ```bash
+   python app.py
+4. **Visitar la URL**
+   http://localhost:8000
 
 
 ### Expresiones de Gratitud 🎁

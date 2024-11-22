@@ -1,4 +1,4 @@
-from app.controllers import inicio, acerca_de_mi, portafolio, contacto, api_handler
+from app.controllers import inicio, acerca_de_mi, portafolio, contacto
 
 
 def registrar_rutas(app):
@@ -10,14 +10,12 @@ def registrar_rutas(app):
     def ruta_acerca_de_mi():
         return acerca_de_mi()
 
-    @app.route('/mi-portafolio')
-    def ruta_portafolio():
-        return portafolio()
+    # Ruta con parametro opcional
+    @app.route('/mi-portafolio/', methods=['GET'])
+    @app.route('/mi-portafolio/<nombre>', methods=['GET'])
+    def ruta_portafolio(nombre=None):
+        return portafolio(nombre)
 
     @app.route('/contactame')
     def ruta_contacto():
         return contacto()
-
-    @app.route('/api', methods=['GET'])
-    def ruta_api():
-        return api_handler()

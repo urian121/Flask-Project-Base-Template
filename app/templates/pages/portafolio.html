@@ -1,0 +1,11 @@
+{% extends 'bases/base.html' %}
+
+{% block title %}Portafolio{% endblock %}
+
+{% block content %}
+{% if nombre %}
+  <h2>Hola, <span class="fw-bold">{{nombre}}</span>. Bienvenido a mi portafolio.</h2>
+{% else %}
+  <h2>Bienvenido a mi portafolio sin nombre especifico.</h2>
+{% endif %}
+{% endblock %}
